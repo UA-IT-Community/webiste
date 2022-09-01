@@ -1,5 +1,15 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
+
+  --font-size: 14px;
+
+  --bg-width: 1000px;
+  --bg-height: 2000px;
+
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;

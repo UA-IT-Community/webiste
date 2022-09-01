@@ -1,13 +1,5 @@
 @import "./base.css";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
 a,
 .green {
   text-decoration: none;
@@ -21,38 +13,21 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    padding: 0 2rem;
-  }
-}
-
-
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .app {
-  max-width: 750px;
-  width: 95%;
+  margin: 10px;
   border-radius: 12px;
-  max-height: 650px;
-  position: relative;
   overflow: hidden;
   box-shadow: inset 0 0 1px 1px black;
 }
 
 .app-header {
+  display: flex;
   padding: 15px;
   position: relative;
 }
@@ -90,6 +65,7 @@ body {
 }
 
 .app-body {
+  font-size: var(--font-size);
   padding: 20px;
   padding-bottom: 5vh;
 }
@@ -99,6 +75,7 @@ body {
 }
 
 .app h1, .app h3 {
+  margin: 5px;
   color: var(--color-heading);
   transition: color 200ms linear 100ms;
 }
@@ -144,8 +121,8 @@ body {
 
 .toggle label::before {
   position: absolute;
-  width: 120vw;
-  height: 120vh;
+  width: var(--bg-width);
+  height: var(--bg-height);
   background: var(--color-background);
   z-index: 10;
   top: 0;
@@ -193,4 +170,20 @@ body {
   transition: background 300ms ease-in-out, opacity 30ms ease-in-out,
     transform 400ms ease-in-out;
   opacity: 1;
+}
+
+.list-and-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 650px) {
+  body {
+    height: 100vh;
+  }
+
+  .list-and-widget {
+    flex-direction: row;
+  }
 }
