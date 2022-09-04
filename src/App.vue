@@ -5,6 +5,41 @@ import { useDark, useToggle, useTitle } from "@vueuse/core";
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
 useTitle("🇺🇦 IT Спільнота");
+
+setTimeout(() => {
+
+  
+  console.log(
+    `%c
+MMMMMMMMMMMMMMMMMMMMMMMMMMWN0d:,...,cd0NWMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMWKkdl;.........',:lxXWMMMMMM
+MMMMMMMMMMMMMMMMMMWN0dc,..........'''....'c0MMMMMM
+MMMMMMMMMMMMMMMWXko;...........''.........'dNMMMMM
+MMMMMMMMMMMMN0xc,...........'.............'oNMMMMM
+MMMMMMMMMMNkc'.........'..................'oNMMMMM
+MMMMMMMMWOc.........''',,''...............'oNMMMMM
+MMMMMMMNx,.......''',;',,'................'oNMMMMM
+MMMMMMWx'......'.',',,'...................'oNMMMMM
+MMMMMMO,......'..''.......................'oNMMMMM
+MMMMMNl......'............................'oNMMMMM
+MMMMMX:    .''............................'oNMMMMM
+MMMMMX:    .'....';lc,'...........'.......'oNMMMMM
+MMMMMX:    .'....'cOXKko:,'.......'.......'dNMMMMM
+MMMMMX:    .'.....',:dOXXKOl,.....',;,'..';OMMMMMM
+MMMMMX:    .'.........,xNMXo'..';cx0Kd,..,dNMMMMMM
+MMMMMX:    .'........,dXXOo'':okKX0xl;'',dXMMMMMMM
+MMMMMX:    .'.......;xNKl,':kXXOdc,'..';xNMMMMMMMM
+MMMMMX:    .'.....';kN0c'..;ll;''..'';oKWMMMMMMMMM
+MMMMMX:    .'.....:ONO:'.........';cxKWMMMMMMMMMMM
+MMMMMX:    .'....'cxd;'..'...'':okKNMMMMMMMMMMMMMM
+MMMMMWd.   .'......''.....',cdOXWMMMMMMMMMMMMMMMMM
+MMMMMMNx;. .'........'':ldkKNMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMN0dl:'....',cdOXWMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMWKo;'';lkXWMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+`,
+    "font:monospace"
+  );
+}, 200);
 </script>
 
 <template>

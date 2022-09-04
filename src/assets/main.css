@@ -1,5 +1,11 @@
 @import "./base.css";
 
+@font-face {
+  font-family: "Raleway";
+  src: url("/src/assets/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+
 a,
 .green {
   text-decoration: none;
@@ -14,6 +20,7 @@ a,
 }
 
 body {
+  font-family: "Raleway";
   background: url('/bg.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -193,4 +200,9 @@ body {
   .list-and-widget {
     flex-direction: row;
   }
+}
+
+.join {
+  margin-left: -10px!important;
+  margin-top: 10px!important;
 }
