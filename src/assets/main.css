@@ -180,7 +180,7 @@ body {
 }
 
 .toggle input:checked~label:before {
-  transform: translate3d(-84%, 23%, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(5);
   transition: background 300ms ease-in-out, opacity 30ms ease-in-out,
     transform 400ms ease-in-out;
   opacity: 1;
